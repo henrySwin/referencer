@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referencer</title>
+
+    <!--Style sheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Open Sans font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+
+    <!--Favicon, created with https://www.pixilart.com/draw-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<h1>R E F E R E N C e r</h1>
+
+<!--Copy code-->
+<div class="tooltip">
+    <button class="button" id="clipboard">
+        <span class="tooltiptext" id="myTooltip">copy</span>
+        copy to clipboard
+    </button>
+</div><br><br>
+
+<!--Display code-->
+<textarea type="text" id="result" rows="20" cols="72" maxlength="4096" placeholder="code goes here..." readonly></textarea><br><br>
+
+<!--GitHub link-->
+<a href="https://github.com/henrySwin/referencer">
+    <img src="GitHub-Mark-Light-64px.png" alt="GitHub logo" width="64" height="64">
+</a>
+
+<!--jQuery link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!--JavaScript file-->
+<script src="generate.js"></script>
+
+</body>
+</html>
