@@ -1,5 +1,5 @@
 body {
-    color: #00FF00;
+    color: #0080FF;
     background-color: #16161d;
     
     font-family: 'Open Sans', sans-serif;
@@ -18,7 +18,7 @@ ul {
 }
 
 /* Generate and Copy to Clipboard buttons. */
-button {
+button, select {
     color: #000000;
     background-color: #FFFFFF;
     
@@ -33,12 +33,12 @@ button {
 
 /* Currently hovering over button. */
 button:hover {
-    background-color: #00FF00;
+    background-color: #0080FF;
 }
 
 /* Currently clicking button. */
 button:active {
-    background-color: #009900;
+    background-color: #4080FF;
 }
 
 /* TextArea where the password is displayed. */
