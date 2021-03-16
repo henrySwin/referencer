@@ -3,10 +3,180 @@ $(document).ready(function(){
     var lastCmd;
     var code = "";
 
-    // Language dropdown.
-    $("#language").change(function(){
+    function print(code) {
         lang = $('#language :selected').text();
         console.log("Language: " + lang);
+
+        switch (lang) {
+            case "C#":
+                $("#result").val(code[0]);
+                break;
+            case "C++":
+                $("#result").val(code[1]);
+                break;
+            case "Python":
+                $("#result").val(code[2]);
+                break;
+            case "Java":
+                $("#result").val(code[3]);
+                break;
+            case "Kotlin":
+                $("#result").val(code[4]);
+                break;
+            case "JavaScript":
+                $("#result").val(code[5]);
+                break;
+        }
+    }
+
+    // Language dropdown.
+    //$("#language").change(function(){
+    //    lang = $('#language :selected').text();
+    //    console.log("Language: " + lang);
+    //});
+
+    // Selection / Iteration dropdown.
+    $("#code-1").change(function(){
+        const choice1 = $('#code-1 :selected').text();
+        switch (choice1) {
+            case "if":
+                const stuff = [
+                    'if ( (cond1 && cond2) || cond3 ) {\n\tcontinue;\n} else if (cond4) {\n\tcontinue;\n} else {\n\tcontinue;\n}',
+                    'if in C++'
+                ];
+                print(stuff);
+                //$("#result").val();
+                break;
+            case "switch":
+                //$("#result").val('switch (var) {\n\tcase "case1":\n\t\tConsole.WriteLine("Case 1");\n\t\tbreak;\n\tcase "case2":\n\t\tConsole.WriteLine("Case 2");\n\t\tbreak;\n}');
+                break;
+            case "for":
+                //$("#result").val('for (var i = 0; i < 10; i++) {\n\tcontinue;\n}');
+                break;
+            case "while":
+                break;
+            case "do while":
+                break;
+            default:
+                break;
+        }
+    });
+
+    // OOP dropdown.
+    $("#code-2").change(function(){
+        const choice2 = $('#code-2 :selected').text();
+        switch (choice2) {
+            case "function":
+                const c21 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "class":
+                const c22 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "inheritance":
+                const c23 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "interface":
+                const c24 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            default:
+                break;
+        }
+    });
+
+    // Miscellaneous dropdown.
+    $("#code-3").change(function(){
+        const choice3 = $('#code-3 :selected').text();
+        switch (choice3) {
+            case "comment":
+                const c31 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "print console":
+                const c32 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "regex":
+                const c33 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            default:
+                break;
+        }
+    });
+
+    // Data connections dropdown.
+    $("#code-4").change(function(){
+        const choice4 = $('#code-4 :selected').text();
+        switch (choice4) {
+            case "database":
+                const c31 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            case "file I/O":
+                const c32 = [
+                    '',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                break;
+            default:
+                break;
+        }
     });
 
     // Undo button.
@@ -26,12 +196,14 @@ $(document).ready(function(){
         lastCmd = "reset";
     });
 
+    /*
     // if, else if, else.
     $("#code-if").click(function(){
         $("#result").val('if ( (cond1 && cond2) || cond3 ) {\n\tcontinue;\n} else if (cond4) {\n\tcontinue;\n} else {\n\tcontinue;\n}');
         code = $("#result").val();
         lastCmd = "code-if";
     });
+
 
     // switch case.
     $("#code-switch").click(function(){
@@ -40,4 +212,5 @@ $(document).ready(function(){
         lastCmd = "code-if";
         console.log("Language: " + lang);
     });
+    */
 });
