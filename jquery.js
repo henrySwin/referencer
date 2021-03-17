@@ -40,22 +40,72 @@ $(document).ready(function(){
         const choice1 = $('#code-1 :selected').text();
         switch (choice1) {
             case "if":
-                const stuff = [
+                const c11 = [
                     'if ( (cond1 && cond2) || cond3 ) {\n\tcontinue;\n} else if (cond4) {\n\tcontinue;\n} else {\n\tcontinue;\n}',
-                    'if in C++'
+                    'if in C++',
+                    '',
+                    '',
+                    '',
+                    ''
                 ];
-                print(stuff);
-                //$("#result").val();
+                print(c11);
                 break;
             case "switch":
                 //$("#result").val('switch (var) {\n\tcase "case1":\n\t\tConsole.WriteLine("Case 1");\n\t\tbreak;\n\tcase "case2":\n\t\tConsole.WriteLine("Case 2");\n\t\tbreak;\n}');
+                const c12 = [
+                    'string colour = "blue";\nswitch (colour) {\n\tcase "red":\n\t\tConsole.WriteLine("It\'s red!);"\n\t\tbreak;\n\tcase "green":\n\t\tConsole.WriteLine("It\'s green!);"\n\t\tbreak;\n\tcase "blue":\n\t\tConsole.WriteLine("It\'s blue!);"\n\t\tbreak;\n}',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                print(c12);
                 break;
             case "for":
                 //$("#result").val('for (var i = 0; i < 10; i++) {\n\tcontinue;\n}');
+                const c13 = [
+                    '// Prints 0, 1, \'continue\' skips 2, prints 3, \'breaks\' at 4.\nfor (int i = 0; i < 5; i++) {\n\tif (i == 2) continue;\n\telse if (i == 4) break;\n\tConsole.WriteLine("i = " + i);\n}',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                print(c13);
+                break;
+            case "for each":
+                const c14 = [
+                    'string[] fruit = { "apple", "banana", "nectarine" };\nforeach (string i in fruit) {\n\tConsole.WriteLine(i);\n}',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                print(c14);
                 break;
             case "while":
+                const c15 = [
+                    'int i = 0;\nwhile (i < 5) {\n\tConsole.WriteLine("i = " + i);\n\ti++;\n}',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                print(c15);
                 break;
             case "do while":
+                const c16 = [
+                    'int i = 10;\ndo {\n\tConsole.WriteLine(i);\n\ti++;\n} while (i < 5);',
+                    '',
+                    '',
+                    '',
+                    '',
+                    ''
+                ];
+                print(c16);
                 break;
             default:
                 break;
@@ -75,6 +125,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c21);
                 break;
             case "class":
                 const c22 = [
@@ -85,6 +136,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c22);
                 break;
             case "inheritance":
                 const c23 = [
@@ -95,6 +147,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c23);
                 break;
             case "interface":
                 const c24 = [
@@ -105,6 +158,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c24);
                 break;
             default:
                 break;
@@ -117,13 +171,14 @@ $(document).ready(function(){
         switch (choice3) {
             case "comment":
                 const c31 = [
-                    '',
-                    '',
-                    '',
-                    '',
-                    '',
-                    ''
+                    '// Single line comment.\n\n/*\nMulti\nline\ncomment.\n*/',
+                    '// Single line comment.\n\n/*\nMulti\nline\ncomment.\n*/',
+                    '# Single line comment.\n\n"""\nMulti line comment\nUsing string literals\nWhich Python ignores.\n"""',
+                    '// Single line comment.\n\n/*\nMulti\nline\ncomment.\n*/',
+                    '// Single line comment.\n\n/*\nMulti\nline\ncomment.\n*/',
+                    '// Single line comment.\n\n/*\nMulti\nline\ncomment.\n*/'
                 ];
+                print(c31);
                 break;
             case "print console":
                 const c32 = [
@@ -134,6 +189,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c32);
                 break;
             case "regex":
                 const c33 = [
@@ -144,6 +200,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c33);
                 break;
             default:
                 break;
@@ -155,7 +212,7 @@ $(document).ready(function(){
         const choice4 = $('#code-4 :selected').text();
         switch (choice4) {
             case "database":
-                const c31 = [
+                const c41 = [
                     '',
                     '',
                     '',
@@ -163,9 +220,10 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c41);
                 break;
             case "file I/O":
-                const c32 = [
+                const c42 = [
                     '',
                     '',
                     '',
@@ -173,6 +231,7 @@ $(document).ready(function(){
                     '',
                     ''
                 ];
+                print(c42);
                 break;
             default:
                 break;
